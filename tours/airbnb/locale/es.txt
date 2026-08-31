@@ -1,0 +1,228 @@
+#: locale=es
+
+## Acción
+
+### URL
+LinkBehaviour_EF124AC8_CDFA_CAE0_41E9_04441560C074.source = http://airbnb.com/h/munayetxeacusco
+LinkBehaviour_E979BC5F_CDCF_4DE0_41DF_FAA2C11E7D7C.source = http://airbnb.com/h/munayetxeacusco
+LinkBehaviour_E2B0A115_C9E0_6B13_41E5_5112CEEDF2CF.source = https://maps.app.goo.gl/9gLuyUrdpcDpBpxp6?g_st=aw
+LinkBehaviour_D6E9FF32_CAC4_C05C_41BE_762FFA567E10.source = https://maps.app.goo.gl/9gLuyUrdpcDpBpxp6?g_st=aw
+LinkBehaviour_ECA81E8B_CAFC_404C_41DF_39195E916D46.source = https://maps.app.goo.gl/9gLuyUrdpcDpBpxp6?g_st=aw
+WebFrame_22F9EEFF_0C1A_2293_4165_411D4444EFEA_mobile.url = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14377.55330038866!2d-73.99492968084243!3d40.75084469078082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9f775f259%3A0x999668d0d7c3fd7d!2s400+5th+Ave%2C+New+York%2C+NY+10018!5e0!3m2!1ses!2sus!4v1467271743182" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+WebFrame_22F9EEFF_0C1A_2293_4165_411D4444EFEA.url = https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14377.55330038866!2d-73.99492968084243!3d40.75084469078082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9f775f259%3A0x999668d0d7c3fd7d!2s400+5th+Ave%2C+New+York%2C+NY+10018!5e0!3m2!1ses!2sus!4v1467271743182" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+
+## Media
+
+### Audio
+audiores_D45538E2_C961_D931_41DF_3FB398946EF6.url = media/audio_D471AC0F_C960_B90F_41E1_7D5890333251_es.mp3
+
+### Imágen
+imlevel_D6DF3E2D_C961_B933_41DD_F5C8340A4C71.url = media/popup_D4F10B96_C967_FF11_41C8_B8C6064C1F65_es_0_0.webp
+imlevel_D6DF4E2D_C961_B933_41E7_36428A43414A.url = media/popup_D4F10B96_C967_FF11_41C8_B8C6064C1F65_es_0_1.webp
+imlevel_D6DF6E2D_C961_B933_41B5_68AC5F6C1E0A.url = media/popup_D4F10B96_C967_FF11_41C8_B8C6064C1F65_es_0_2.webp
+imlevel_D6DF7E2D_C961_B933_41CB_0D425EB70DE9.url = media/popup_D4F10B96_C967_FF11_41C8_B8C6064C1F65_es_0_3.webp
+imlevel_D6C64DBD_C960_5B13_41E8_277A5C081FA4.url = media/popup_D5B4F6CF_C960_690F_41D8_8A6A2B69A372_es_0_0.webp
+imlevel_D6C63DBD_C960_5B13_41D5_30F28ED7BE51.url = media/popup_D5B4F6CF_C960_690F_41D8_8A6A2B69A372_es_0_1.webp
+imlevel_D6C60DBD_C960_5B13_41D5_E74077C3AD28.url = media/popup_D5B4F6CF_C960_690F_41D8_8A6A2B69A372_es_0_2.webp
+imlevel_D6C7EDBD_C960_5B13_41CF_B53F90ED03B1.url = media/popup_D5B4F6CF_C960_690F_41D8_8A6A2B69A372_es_0_3.webp
+imlevel_D6CB860A_C961_A8F1_41D8_B61477BB1703.url = media/popup_D5E8D51A_C960_AB11_41E8_0A34F470BCA9_es_0_0.webp
+imlevel_D6CD860B_C961_A8F7_41C3_0E496C0F2FE6.url = media/popup_D5E8D51A_C960_AB11_41E8_0A34F470BCA9_es_0_1.webp
+imlevel_D6CD960B_C961_A8F7_41E0_1C67F578A562.url = media/popup_D5E8D51A_C960_AB11_41E8_0A34F470BCA9_es_0_2.webp
+imlevel_D6CDB60B_C961_A8F7_41E8_B7D0F86D300B.url = media/popup_D5E8D51A_C960_AB11_41E8_0A34F470BCA9_es_0_3.webp
+imlevel_D75A2AC1_C8FC_9CFE_41B7_F3B74FECEB5D.url = media/popup_D62DECD3_C8FC_B482_41DA_1055509ADE0D_es_0_0.webp
+imlevel_D7551AC1_C8FC_9CFE_41D5_B8F84B02856B.url = media/popup_D62DECD3_C8FC_B482_41DA_1055509ADE0D_es_0_1.webp
+imlevel_D7550AC1_C8FC_9CFE_41E7_D2C831C03B4B.url = media/popup_D62DECD3_C8FC_B482_41DA_1055509ADE0D_es_0_2.webp
+imlevel_D7556AC1_C8FC_9CFE_41E0_156C648C4EF1.url = media/popup_D62DECD3_C8FC_B482_41DA_1055509ADE0D_es_0_3.webp
+imlevel_E9E4A15E_C8E4_AD82_41CD_30198194D374.url = media/popup_D7B88301_C8E4_6D7E_41E5_3A622579ECE3_es_0_0.webp
+imlevel_E9E4815E_C8E4_AD82_41D6_3DC804B5BE77.url = media/popup_D7B88301_C8E4_6D7E_41E5_3A622579ECE3_es_0_1.webp
+imlevel_E9E4E15E_C8E4_AD82_41D1_963C96C1F687.url = media/popup_D7B88301_C8E4_6D7E_41E5_3A622579ECE3_es_0_2.webp
+imlevel_E9E4D15E_C8E4_AD82_41CC_49EB723718A8.url = media/popup_D7B88301_C8E4_6D7E_41E5_3A622579ECE3_es_0_3.webp
+imlevel_E9CEB0C9_C8E4_EC8E_41D9_1D6FA67D82E8.url = media/popup_D7C6C0C1_C8EC_ECFE_41C0_F66439247F57_es_0_0.webp
+imlevel_E9CE40C9_C8E4_EC8E_41BD_5B320A3E8ADC.url = media/popup_D7C6C0C1_C8EC_ECFE_41C0_F66439247F57_es_0_1.webp
+imlevel_E9CE50CA_C8E4_EC82_41D4_3A634A5BE322.url = media/popup_D7C6C0C1_C8EC_ECFE_41C0_F66439247F57_es_0_2.webp
+imlevel_E9CE60CA_C8E4_EC82_41C2_EA2BC59B7EF6.url = media/popup_D7C6C0C1_C8EC_ECFE_41C0_F66439247F57_es_0_3.webp
+imlevel_E9C05966_C8E4_FD82_41E2_991F3BF2269C.url = media/popup_D7D4E434_C8EC_EB86_41E0_1222E9D78EA7_es_0_0.webp
+imlevel_E9C07966_C8E4_FD82_41D4_DD63CC46EF0C.url = media/popup_D7D4E434_C8EC_EB86_41E0_1222E9D78EA7_es_0_1.webp
+imlevel_E9C00966_C8E4_FD82_41C7_7E5B9E5614A1.url = media/popup_D7D4E434_C8EC_EB86_41E0_1222E9D78EA7_es_0_2.webp
+imlevel_E9C01966_C8E4_FD82_41E8_307F7E922BE2.url = media/popup_D7D4E434_C8EC_EB86_41E0_1222E9D78EA7_es_0_3.webp
+imlevel_E9DAB894_C8E4_9C86_41D2_37456871201A.url = media/popup_E8CF954B_C8ED_F582_41E1_7E16007B52BA_es_0_0.webp
+imlevel_E9DA9894_C8E4_9C86_41D3_C10C5D524B73.url = media/popup_E8CF954B_C8ED_F582_41E1_7E16007B52BA_es_0_1.webp
+imlevel_E9DAF894_C8E4_9C86_41C9_87FC9BF177CF.url = media/popup_E8CF954B_C8ED_F582_41E1_7E16007B52BA_es_0_2.webp
+imlevel_E9DAE894_C8E4_9C86_41BE_1C918682E4E8.url = media/popup_E8CF954B_C8ED_F582_41E1_7E16007B52BA_es_0_3.webp
+imlevel_D6A5654D_C961_AB73_41E7_2486BAE1AB62.url = media/popup_E96B02AF_C925_AC82_41DF_8F34C0AA797C_es_0_0.webp
+imlevel_D6A7954D_C961_AB73_41E4_120E3DE35C3A.url = media/popup_E96B02AF_C925_AC82_41DF_8F34C0AA797C_es_0_1.webp
+imlevel_D6A7B54D_C961_AB73_41E2_BF5EA029A048.url = media/popup_E96B02AF_C925_AC82_41DF_8F34C0AA797C_es_0_2.webp
+imlevel_D6A7D54D_C961_AB73_41E9_1C87D827A92C.url = media/popup_E96B02AF_C925_AC82_41DF_8F34C0AA797C_es_0_3.webp
+imlevel_D6F3B581_C960_6BF3_41D5_C0B07E2A90AF.url = media/popup_E9DC941E_C927_AB82_41D0_874C57A8C79C_es_0_0.webp
+imlevel_D6F5C581_C960_6BF3_41E4_28D755EC9734.url = media/popup_E9DC941E_C927_AB82_41D0_874C57A8C79C_es_0_1.webp
+imlevel_D6F59581_C960_6BF3_41B9_E60F91823620.url = media/popup_E9DC941E_C927_AB82_41D0_874C57A8C79C_es_0_2.webp
+imlevel_D6F58581_C960_6BF3_41AE_52CDD1053860.url = media/popup_E9DC941E_C927_AB82_41D0_874C57A8C79C_es_0_3.webp
+imlevel_E9F1CB4A_C8E4_BD82_41D7_CC4328D3A399.url = media/popup_E9E48C23_C8E4_7B82_41E8_2CEDFE5F9C7A_es_0_0.webp
+imlevel_E9F0CB4A_C8E4_BD82_41E8_FA9EB6CDFCF2.url = media/popup_E9E48C23_C8E4_7B82_41E8_2CEDFE5F9C7A_es_0_1.webp
+imlevel_E9F0DB4A_C8E4_BD82_41C1_533A127ED258.url = media/popup_E9E48C23_C8E4_7B82_41E8_2CEDFE5F9C7A_es_0_2.webp
+imlevel_E9F12B4A_C8E4_BD82_41DB_D7E83D703BFB.url = media/popup_E9E48C23_C8E4_7B82_41E8_2CEDFE5F9C7A_es_0_3.webp
+imlevel_EC214376_C807_79BD_41E3_4FC5DB7E1804.url = media/popup_EAD736C2_C87C_98D5_41CF_3C501072637F_es_0_0.webp
+imlevel_EC215376_C807_79BD_41CC_D9E43B4462E5.url = media/popup_EAD736C2_C87C_98D5_41CF_3C501072637F_es_0_1.webp
+imlevel_EC2E9376_C807_79BD_41E1_A4417E6477AB.url = media/popup_EAD736C2_C87C_98D5_41CF_3C501072637F_es_0_2.webp
+imlevel_EC2EA376_C807_79BD_41C6_63C3E45D6B4C.url = media/popup_EAD736C2_C87C_98D5_41CF_3C501072637F_es_0_3.webp
+imlevel_EC21CCA7_C81B_8F5B_41BB_B5BE9EB38905.url = media/popup_EC906C5A_C80D_8FF5_41AD_7F874186C88D_es_0_0.webp
+imlevel_EC213CA7_C81B_8F5B_41E4_8B7EF3909F23.url = media/popup_EC906C5A_C80D_8FF5_41AD_7F874186C88D_es_0_1.webp
+imlevel_EC212CA7_C81B_8F5B_41B4_763E9906CE24.url = media/popup_EC906C5A_C80D_8FF5_41AD_7F874186C88D_es_0_2.webp
+imlevel_EC211CA7_C81B_8F5B_41CA_A4CF929729BF.url = media/popup_EC906C5A_C80D_8FF5_41AD_7F874186C88D_es_0_3.webp
+imlevel_ECC0D50E_C81B_F96D_41D8_C3C8ECA75C4B.url = media/popup_ED598617_C805_7B7B_41D8_40E56A5E8233_es_0_0.webp
+imlevel_ECC0E50E_C81B_F96D_4192_4FB2F7822423.url = media/popup_ED598617_C805_7B7B_41D8_40E56A5E8233_es_0_1.webp
+imlevel_ECC0F50E_C81B_F96D_41A8_8A66D4B0436A.url = media/popup_ED598617_C805_7B7B_41D8_40E56A5E8233_es_0_2.webp
+imlevel_ECC0850E_C81B_F96D_418B_F5D8DF46C387.url = media/popup_ED598617_C805_7B7B_41D8_40E56A5E8233_es_0_3.webp
+imlevel_ECC89D20_C81B_8955_41E0_613F95431064.url = media/popup_EE4FAC5E_C804_8FED_41D9_EF608286AEA4_es_0_0.webp
+imlevel_ECC8AD20_C81B_8955_41DC_E44F24D5798B.url = media/popup_EE4FAC5E_C804_8FED_41D9_EF608286AEA4_es_0_1.webp
+imlevel_ECC8BD20_C81B_8955_41C8_19097E252DCB.url = media/popup_EE4FAC5E_C804_8FED_41D9_EF608286AEA4_es_0_2.webp
+imlevel_ECC94D20_C81B_8955_41CB_579A4F14CA4F.url = media/popup_EE4FAC5E_C804_8FED_41D9_EF608286AEA4_es_0_3.webp
+
+### Popup Imágen
+
+### Subtítulos de Audio
+
+### Título
+album_ED107EC7_C804_88DB_41D2_580F92921BFA_0.label = DSC03167
+album_EB190EFC_CAC5_C1C4_41E7_DA2971E25090_0.label = DSC03167
+album_EB61EC14_C804_8F7D_41CE_01097CD3E843_4.label = DSC03172
+album_EB61EC14_C804_8F7D_41CE_01097CD3E843_5.label = DSC03185
+album_EF5A7372_C804_99B5_41B0_CAE151B46ACA_0.label = DSC03194
+album_EB61EC14_C804_8F7D_41CE_01097CD3E843_0.label = DSC03197
+album_EB190EFC_CAC5_C1C4_41E7_DA2971E25090_1.label = DSC03198
+album_EB61EC14_C804_8F7D_41CE_01097CD3E843_1.label = DSC03198
+album_EB190EFC_CAC5_C1C4_41E7_DA2971E25090_2.label = DSC03203
+album_ED107EC7_C804_88DB_41D2_580F92921BFA_1.label = DSC03207
+album_EF5A7372_C804_99B5_41B0_CAE151B46ACA_1.label = DSC03231
+album_EB61EC14_C804_8F7D_41CE_01097CD3E843_3.label = DSC03233
+album_EB190EFC_CAC5_C1C4_41E7_DA2971E25090_3.label = DSC03233
+album_EB61EC14_C804_8F7D_41CE_01097CD3E843_2.label = DSC03234
+panorama_DE658FA2_C81D_8955_41C5_D1172F2F83BA.label = Entrada-1
+panorama_DF9E5980_C81D_8955_41E8_48D315BCD4F8.label = baño principal
+panorama_DE650A32_C81D_8BB5_41E3_04EAFE028F8B.label = baño1
+panorama_DE656593_C81D_997B_41E0_24F52624AAB6.label = cocina
+panorama_DE65E8F7_C81D_88BB_41CE_F2315D31B13D.label = habitacion 1
+panorama_DE65E27C_C81D_9BAD_41DD_F5BBA5117162.label = habitacion 2
+panorama_DE651C14_C81D_8F7D_41DD_EE865278986F.label = habitacion 3 centro
+panorama_DE6545BE_C81D_78AD_41D4_A9043554A123.label = habitacion principal
+panorama_DE65FF86_C81C_895D_41DB_406223E18FD8.label = pasadizo 1
+panorama_DE654920_C81C_8955_41BA_5D3AD091973D.label = pasadizo 2
+panorama_DE650286_C81C_BB5D_41CC_FD6C64AD27CD.label = pasadizo 3
+panorama_DE654BFB_C81C_88AB_41D5_98B0C4362CB9.label = pasadizo 4
+panorama_DE6505A4_C81C_995D_41D2_D2EE0E821B11.label = patio-1
+panorama_DE64BF6E_C81C_89AD_41E2_59DF7823AEFA.label = principal
+panorama_DE650905_C81C_895F_41E1_9876CB3E9654.label = sala centro
+panorama_DE6532F3_C81C_98BB_41E3_AC8FFC93ADD1.label = sala fondo
+album_EB190EFC_CAC5_C1C4_41E7_DA2971E25090.label = Álbum de Fotos DSC03167
+album_ED107EC7_C804_88DB_41D2_580F92921BFA.label = Álbum de Fotos DSC03167
+album_EF5A7372_C804_99B5_41B0_CAE151B46ACA.label = Álbum de Fotos DSC03194
+album_EB61EC14_C804_8F7D_41CE_01097CD3E843.label = Álbum de Fotos DSC03197
+
+## Skin
+
+### Botón
+Button_307CB5CF_6057_FBCC_4181_83F08F76DF2A.label = AMENITIES
+Button_307F95CE_6057_FBCC_41C7_B333F07C8122.label = Bar
+Button_307F85CE_6057_FBCC_41D3_51C00DB92A20.label = Chill Out
+Button_EC019BBC_CAC4_4044_41DA_95C7DFBEE3C8.label = INFO
+Button_ECADDE89_CAFC_404C_41E3_5AEFE0737416.label = LOCATION
+Button_41E382A5_60B9_0A08_41D5_3FD188EFFDD4.label = LOCATION
+Button_062AF830_1140_E215_418D_D2FC11B12C47.label = LOREM IPSUM
+Button_718FB1CD_60B6_E5E3_41D6_BCB4CCFDFBDC.label = LOREM IPSUM
+Button_307FD5CE_6057_FBCC_41CC_536DDA444F00.label = Lobby
+Button_3B1F3FAF_60CE_684C_41A0_AD93990FC16F.label = Lorem Ipsum
+Button_3C374402_60CE_5834_41C7_743903F3EAD1.label = Lorem Ipsum
+Button_3C2E84AF_60CE_584B_41C3_79FAE620CCE9.label = Lorem Ipsum
+Button_307F05CE_6057_FBCC_41D6_C582E4F8D33B.label = Lorem Ipsum
+Button_3AEC57F6_60D6_67DD_41D0_694A036298AF.label = Lorem Ipsum
+Button_3B92E10A_60D6_7834_41D1_4B446F9FB434.label = Lorem Ipsum
+Button_3BBB129C_60D6_784C_41D3_B811E1E9E26B.label = Lorem Ipsum
+Button_3BC5B42E_60D6_784D_41A3_6479FA21A1A9.label = Lorem Ipsum
+Button_3BF9B800_60D6_6834_41B0_F6309500A250.label = Lorem Ipsum
+Button_3B197998_60D6_6855_41C7_99A6C32E2384.label = Lorem Ipsum
+Button_3B3C7B5C_60D6_68CD_41D1_FFB577C80ADA.label = Lorem Ipsum
+Button_3B031B65_60CE_E8FC_41CF_18C07E2E58B8.label = Lorem Ipsum
+Button_030C6B04_60CA_683C_419C_6C1F0B9EB051.label = Lorem Ipsum
+Button_3C35C0B9_60CD_F854_41CA_2F187FB8960F.label = Lorem Ipsum
+Button_3C58D2BC_60CD_F84C_41D7_7CB447A7D5BF.label = Lorem Ipsum
+Button_3C70C399_60CD_F854_41D6_488C924AD534.label = Lorem Ipsum
+Button_3C69544A_60CD_F835_41CA_C7312C7B3578.label = Lorem Ipsum
+Button_3D8024FE_60CD_F9CC_41D7_A101588235F6.label = Lorem Ipsum
+Button_3DBB65DA_60CD_FBD4_41D0_4F3B5CD606A9.label = Lorem Ipsum
+Button_3DF12A63_60CD_E8FB_41D0_83B1FB2CC56F.label = Lorem Ipsum
+Button_3C85A007_60CE_F83B_41B9_7D30CC9CF6EC.label = Lorem Ipsum
+Button_3C96EF55_60CE_E8DC_4180_0D3CE8FCB751.label = Lorem Ipsum
+Button_3CA53F6D_60CE_68CC_41D0_97234605DBC6.label = Lorem Ipsum
+Button_3CF0E1E2_60CE_5BF4_4136_3FE02552AC94.label = Lorem Ipsum
+Button_3CE40290_60CE_5854_41D7_2608A956C59B.label = Lorem Ipsum
+Button_3C1F1344_60CE_583C_419A_D3E4ACDEA010.label = Lorem Ipsum
+Button_3CC3E3ED_60CE_FFCC_41C4_C48363B62A80.label = Lorem Ipsum
+Button_3B66CEDB_60CE_E9D4_41CA_2F3DAC235546.label = Lorem Ipsum
+Button_3C45F5D2_60CE_5BD4_41C0_CC1810D45E29.label = Lorem Ipsum
+Button_025CF94C_60F5_E8CC_41C7_4B0565CACC1A.label = Lorem Ipsum
+Button_3B3673B8_60CF_B854_41B9_8AC7249D3A1B.label = Lorem Ipsum
+Button_027E69DF_60F5_EBCC_41D0_DA549FE430A5.label = Lorem Ipsum
+Button_3B5DCD73_60CE_E8D4_41A0_A70D622FF822.label = Lorem Ipsum
+Button_3B4F7E10_60CE_E854_41D3_4200495C04EB.label = Lorem Ipsum
+Button_0210B80A_60F5_E834_41C2_262A279EA500.label = Lorem Ipsum
+Button_03AA7C9B_60F5_E854_41D1_C29772B2A455.label = Lorem Ipsum
+Button_039B0A9C_60F5_E84C_41B4_85DA5003EEFE.label = Lorem Ipsum
+Button_023318B5_60F5_E85C_41C2_C8C50D7C368E.label = Lorem Ipsum
+Button_19640B96_60CA_685C_41D0_C3EFCA646A08.label = Lorem Ipsum
+Button_02C35607_60F5_D83C_41D1_3F7BE5AB7368.label = Lorem Ipsum
+Button_307E25CE_6057_FBCC_41D1_E295E5C3528A.label = Main Entrance
+Button_307FF5CE_6057_FBCC_41D5_405F882ECED2.label = Meeting Area 1
+Button_307FE5CE_6057_FBCC_41D1_2DA85B874499.label = Meeting Area 2
+Button_EF36D6D0_CAC4_41DC_41E1_8048144CE9EF.label = PHOTOS
+Button_307E65CE_6057_FBCC_41D4_18C7A0A54239.label = RECEPTION
+Button_307F25D0_6057_FBD4_41B0_5E14C1D2FC22.label = RESTAURANTS
+Button_307F45CE_6057_FBCC_41D5_FD32EE2D5A78.label = ROOMS
+Button_307FC5CE_6057_FBCC_4190_85A741B8DCAC.pressedLabel = Reception
+Button_307FC5CE_6057_FBCC_4190_85A741B8DCAC.label = Reception
+Button_307F65CF_6057_FBCC_41BB_13FA17E2C9AB.label = SPORTS AREA
+Button_307FD5CF_6057_FBCC_41D4_AEEBAD314687.label = SWIMMING POOL
+Button_307FB5CE_6057_FBCC_41AE_9BF529C6E6AF.label = Terrace
+
+### Etiqueta
+Label_0C5F23A8_3BA0_A6FF_419F_468451E37918_mobile.text = APARTAMENT
+Label_0C5F23A8_3BA0_A6FF_419F_468451E37918.text = APARTAMENT
+Label_0C5F13A8_3BA0_A6FF_41BD_E3D21CFCE151_mobile.text = CUSCO
+Label_0C5F13A8_3BA0_A6FF_41BD_E3D21CFCE151.text = CUSCO
+Label_0E9CEE5D_36F3_E64E_419C_5A94FA5D3CA1.text = Munay Etxea
+Label_0E9CEE5D_36F3_E64E_419C_5A94FA5D3CA1_mobile.text = Munay Etxea
+
+### Imágen
+Image_05314BAF_3AA1_A6F2_41CB_86A11240FA50.url = skin/Image_05314BAF_3AA1_A6F2_41CB_86A11240FA50_es.png
+Image_05314BAF_3AA1_A6F2_41CB_86A11240FA50_mobile.url = skin/Image_05314BAF_3AA1_A6F2_41CB_86A11240FA50_mobile_es.png
+Image_06C5BBA5_1140_A63F_41A7_E6D01D4CC397.url = skin/Image_06C5BBA5_1140_A63F_41A7_E6D01D4CC397_es.jpg
+Image_0B48D65D_11C0_6E0F_41A2_4D6F373BABA0.url = skin/Image_0B48D65D_11C0_6E0F_41A2_4D6F373BABA0_es.jpg
+Image_41E322A5_60B9_0A08_41D0_4D34AC0B3F29.url = skin/Image_41E322A5_60B9_0A08_41D0_4D34AC0B3F29_es.png
+Image_731CA57E_60BF_A2A1_4190_01076897586C.url = skin/Image_731CA57E_60BF_A2A1_4190_01076897586C_es.jpg
+Image_731CE57E_60BF_A2A1_41CC_3F43DCC7BC6F.url = skin/Image_731CE57E_60BF_A2A1_41CC_3F43DCC7BC6F_es.jpg
+Image_E3064C91_CACC_405C_4191_1292F48F9C78.url = skin/Image_E3064C91_CACC_405C_4191_1292F48F9C78_es.jpg
+Image_E6B76370_CACB_C0DC_41C3_942345502C51.url = skin/Image_E6B76370_CACB_C0DC_41C3_942345502C51_es.jpg
+
+### Menú Desplegable
+DropDown_05783A1F_3AA3_A1D2_41A6_E88282E5373B.label = AMENITIES
+DropDown_0561BA16_3AA3_A1D2_41C7_FDA0B6E9EE29.label = RECEPTION
+DropDown_05784A29_3AA3_A1FE_41B1_E2305F2F53BE.label = RESTAURANTS
+DropDown_05789A1B_3AA3_A1D2_41CC_002739F0C312.label = ROOMS
+DropDown_057BFA20_3AA3_A1EE_41A9_8EE569D894A7.label = SPORTS AREA
+DropDown_057B3A27_3AA3_A1F2_41C0_6BB995D79A09.label = SWIMMING POOL
+
+### Texto Multilínea
+HTMLText_731F057E_60BF_A2A1_41C8_ACE4EB05FF54.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:4.369999999999999vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:4.37vmin;">Mauris aliquet neque quis libero consequat vestibulum. Donec lacinia consequat dolor viverra sagittis. Praesent consequat porttitor risus, eu condimentum nunc. Proin et velit ac sapien luctus efficitur egestas ac augue. Nunc dictum, augue eget eleifend interdum, quam libero imperdiet lectus, vel scelerisque turpis lectus vel ligula. Duis a porta sem. Maecenas sollicitudin nunc id risus fringilla, a pharetra orci iaculis. Aliquam turpis ligula, tincidunt sit amet consequat ac, imperdiet non dolor.</SPAN></SPAN></DIV></div>
+HTMLText_E9A297EC_CDC6_BAA0_41BE_A4155919BDF3.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:5.829999999999999vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:5.83vmin;font-family:'Montserrat';"><B>Airbnb:</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:4.369999999999999vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:4.37vmin;"> </SPAN><SPAN STYLE="color:#0099cc;font-size:3.61vmin;">airbnb.com/h/munayetxeacusco</SPAN><SPAN STYLE="font-size:3.61vmin;"> </SPAN></SPAN></DIV></div>
+HTMLText_718FA1CD_60B6_E5E3_41D3_6335BDF289A6.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:8.33vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:8.33vmin;font-family:'Montserrat';"><B>MUNAY ETXEA</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:4.72vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#f7931e;font-size:4.72vmin;font-family:'Montserrat';"><B>APARTAMENT </B></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:4.72vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:0.87vmin;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:3.61vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.61vmin;">¡Bienvenidos! </SPAN></SPAN></DIV><p STYLE="margin:0; line-height:3.61vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:0.87vmin;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:3.61vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.61vmin;">Nos alegra recibirlos. Los invitamos a realizar este recorrido virtual para conocer cada rincón del departamento, descubrir sus espacios y familiarizarse con todas las comodidades que hemos preparado para que disfruten de una estancia cómoda y agradable.</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:3.61vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:0.87vmin;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:3.61vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.61vmin;">¡Esperamos que se sientan como en casa y disfruten al máximo su estadía!</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:3.61vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:0.87vmin;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:5.829999999999999vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:5.83vmin;font-family:'Montserrat';"><B>Contacto:  </B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:3.61vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.61vmin;"> +51 984254961</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:3.61vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:0.87vmin;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:5.829999999999999vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:5.83vmin;font-family:'Montserrat';"><B>Dirección:</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:5.829999999999999vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#f7931e;font-size:5.83vmin;font-family:'Montserrat';"><B>Calle Cahuide 400 Lt.2 Urb. Tahuantinsuyo - Cusco</B></SPAN></SPAN></DIV></div>
+HTMLText_731CF57E_60BF_A2A1_41D7_B81B17089B91.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:8.469999999999999vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#f7931e;font-size:8.47vmin;font-family:'Montserrat';"><B>JOHN DOE</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:5.28vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:5.28vmin;font-family:'Montserrat';">Licensed Real Estate Salesperson</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:4.15vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.09vmin;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:3.8900000000000023vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#666666;font-size:3.89vmin;font-family:'Montserrat';">Tlf.: +11 111 111 111</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:3.8900000000000023vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#666666;font-size:3.89vmin;font-family:'Montserrat';">jhondoe@realestate.com</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:3.8900000000000023vmin;"><SPAN STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#666666;font-size:3.89vmin;font-family:'Montserrat';">www.loremipsum.com</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.09vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.09vmin;font-family:Arial, Helvetica, sans-serif;"/></p><p STYLE="margin:0; line-height:1.09vmin;"><BR STYLE="display:inline-block; letter-spacing:0vmin; white-space:pre-wrap;color:#000000;font-size:1.09vmin;font-family:Arial, Helvetica, sans-serif;"/></p></div>
+HTMLText_0B42C466_11C0_623D_4193_9FAB57A5AC33.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:7.609999999999999vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#f7931e;font-size:7.61vh;font-family:'Bebas Neue Bold';">___</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:3.7000000000000006vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.7vh;font-family:'Montserrat';"><B>LOREM IPSUM</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:3.7000000000000006vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.7vh;font-family:'Montserrat';"><B>DOLOR SIT AMET</B></SPAN></SPAN></DIV></div>
+HTMLText_062AD830_1140_E215_41B0_321699661E7F.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:7.609999999999999vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#f7931e;font-size:7.61vh;font-family:'Bebas Neue Bold';">___</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:3.7000000000000006vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:3.7vh;font-family:'Montserrat';"><B>MUNAY ETXEA</B></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.96vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:1.2vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:1.9599999999999995vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#f7931e;font-size:1.96vh;font-family:'Montserrat';"><B>APARTAMENT</B></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.2vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:1.2vh;font-family:Arial, Helvetica, sans-serif;"/></p><p STYLE="margin:0; line-height:1.2vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:1.2vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:1.7107309486780713vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.4vh;">¡</SPAN><SPAN STYLE="font-size:1.71vh;">Bienvenidos! </SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.71vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:1.2vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:1.7107309486780713vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.71vh;">Nos alegra recibirlos. Los invitamos a realizar este recorrido virtual para conocer cada rincón del departamento, descubrir sus espacios y familiarizarse con todas las comodidades que hemos preparado para que disfruten de una estancia cómoda y agradable.</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.71vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:1.2vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:1.7107309486780713vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.71vh;">¡Esperamos que se sientan como en casa y disfruten al máximo su estadía!</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:1.7107309486780713vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.71vh;"> </SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:1.9599999999999995vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.96vh;font-family:'Montserrat';"><B>Contacto:</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:1.74vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.74vh;"> 984254961</SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.74vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:1.2vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:1.9599999999999995vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.96vh;font-family:'Montserrat';"><B>DIRECCIÓN:</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:2.8299999999999996vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#f7931e;font-size:2.83vh;font-family:'Oswald';"><B>Calle Cahuide 400 Lt.2 Urb. Tahuantinsuyo - Cusco</B></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:2.83vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:1.2vh;font-family:Arial, Helvetica, sans-serif;"/></p><p STYLE="margin:0; line-height:2.83vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:1.2vh;font-family:Arial, Helvetica, sans-serif;"/></p></div>
+HTMLText_EEE7A67D_CDC9_5DA0_41AB_B8D47F10FCA2.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:1.9599999999999995vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.96vh;font-family:'Montserrat';"><B>Airbnb: </B></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.74vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:1.2vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:1.74vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#0066cc;font-size:1.74vh;"> airbnb.com/h/munayetxeacusco </SPAN></SPAN></DIV></div>
+HTMLText_0B4B0DC1_11C0_6277_41A4_201A5BB3F7AE.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:2.0700000000000003vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#f7931e;font-size:2.07vh;font-family:'Montserrat';"><B>JOHN DOE</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:1.74vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:1.74vh;font-family:'Montserrat';"><B>LICENSED REAL ESTATE SALESPERSON</B></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.2vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:1.2vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:1.3099999999999998vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#999999;font-size:1.31vh;font-family:'Montserrat';"><B>Tlf.: +11 111 111 111</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:1.3099999999999998vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#999999;font-size:1.31vh;font-family:'Montserrat';"><B>jhondoe@realestate.com</B></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:1.3099999999999998vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#999999;font-size:1.31vh;font-family:'Montserrat';"><B>www.loremipsum.com</B></SPAN></SPAN></DIV><p STYLE="margin:0; line-height:1.2vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:1.2vh;font-family:Arial, Helvetica, sans-serif;"/></p><p STYLE="margin:0; line-height:1.2vh;"><BR STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:1.2vh;font-family:Arial, Helvetica, sans-serif;"/></p><DIV STYLE="text-align:left;font-size:1.2000000000000004vh;"><SPAN STYLE="display:inline-block; letter-spacing:0vh; white-space:pre-wrap;color:#000000;font-size:1.2vh;font-family:Arial, Helvetica, sans-serif;">Mauris aliquet neque quis libero consequat vestibulum. Donec lacinia consequat dolor viverra sagittis. Praesent consequat porttitor risus, eu condimentum nunc. Proin et velit ac sapien luctus efficitur egestas ac augue. Nunc dictum, augue eget eleifend interdum, quam libero imperdiet lectus, vel scelerisque turpis lectus vel ligula. Duis a porta sem. Maecenas sollicitudin nunc id risus fringilla, a pharetra orci iaculis. Aliquam turpis ligula, tincidunt sit amet consequat ac, imperdiet non dolor.</SPAN></DIV></div>
+
+## Tour
+
+### Descripción
+
+### Título
+tour.name = Munay Etxea

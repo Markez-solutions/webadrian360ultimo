@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="hosting-provider" content="Netlify">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversiones Adrián - Recorridos Virtuales</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .tour-container {
+            position: relative;
+            width: 100%;
+            height: 85vh;
+            background: #000;
+        }
+
+        .tour-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Estilo para simular bloques de cemento / concreto industrial */
+        .cement-block {
+            background: linear-gradient(135deg, #2b2b2b 0%, #1a1a1a 100%);
+            border: 3px solid #4a4a4a;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8), inset 0 2px 4px rgba(255, 255, 255, 0.1);
+            letter-spacing: 0.15em;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-950 text-white font-sans">
+
+    <!-- BOTÓN FLOTANTE DE AUDIO -->
+    <button id="global-mute-btn" onclick="toggleGlobalMute()"
+        class="fixed bottom-6 right-6 z-50 bg-amber-600 hover:bg-amber-700 text-white p-3 rounded-full shadow-2xl flex items-center gap-2 transition-all duration-300">
+        <svg id="mute-icon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+        </svg>
+        <span id="mute-text" class="text-sm font-medium pr-1">Audio Activado</span>
+    </button>
+
+    <!-- 1. PORTADA CON AUDIO DE FONDO (VIDEO OCULTO VISUALMENTE) Y TEXTO DE CEMENTO -->
+    <header class="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-gray-950"
+        id="portada-section">
+        <!-- Video reproduciéndose oculto visualmente pero activo en audio -->
+        <video autoplay muted loop playsinline class="hidden" id="dron-video">
+            <source src="dron.mp4" type="video/mp4">
+            Tu navegador no soporta videos de fondo.
+        </video>
+
+        <div class="relative z-20 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
+            <!-- Bloque de Cemento Estilizado -->
+            <div
+                class="cement-block px-8 py-6 rounded-xl mb-8 transform hover:scale-105 transition-transform duration-300">
+                <h1 class="text-3xl md:text-5xl font-black text-gray-100 uppercase drop-shadow-md">
+                    Sumérgete en nuestros recorridos virtuales 360
+                </h1>
+            </div>
+
+            <!-- Flechas Parpadeantes Señalando Hacia Abajo -->
+            <div class="flex flex-col items-center animate-bounce mt-4 space-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-amber-500 animate-pulse" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-amber-500/70 animate-pulse delay-150"
+                    fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                        d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. SECCIÓN DE RECORRIDOS VIRTUALES EN CASCADA -->
+    <section id="recorridos" class="py-16 px-4 md:px-12 bg-gray-900">
+        <div class="max-w-6xl mx-auto text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-amber-500">Experiencias Inmersivas en Vivo</h2>
+            <p class="text-gray-400">Desliza para explorar cada uno de nuestros espacios destacados</p>
+        </div>
+
+        <div class="space-y-16 max-w-5xl mx-auto">
+
+            <!-- Tour 1: Elite -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-2xl border border-gray-700">
+                <div class="p-4 bg-gray-900 border-b border-gray-700 flex justify-between items-center">
+                    <h3 class="text-xl font-semibold text-white">Proyecto Elite - Key Hauss</h3>
+                    <span class="text-xs bg-amber-600 text-white px-3 py-1 rounded-full">360° Interactivo</span>
+                </div>
+                <div class="tour-container">
+                    <iframe class="tour-iframe interactive-tour" data-src="tours/Elite/KEY HAUSS/data/index"
+                        allow="gyroscope; accelerometer; magnetometer; vr; autoplay" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Tour 2: Airbnb -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-2xl border border-gray-700">
+                <div class="p-4 bg-gray-900 border-b border-gray-700 flex justify-between items-center">
+                    <h3 class="text-xl font-semibold text-white">Hospedaje Exclusivo - Airbnb</h3>
+                    <span class="text-xs bg-amber-600 text-white px-3 py-1 rounded-full">360° Interactivo</span>
+                </div>
+                <div class="tour-container">
+                    <iframe class="tour-iframe interactive-tour" data-src="tours/airbnb/index.htm"
+                        allow="gyroscope; accelerometer; magnetometer; vr; autoplay" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Tour 3: Salón de Yoga -->
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-2xl border border-gray-700">
+                <div class="p-4 bg-gray-900 border-b border-gray-700 flex justify-between items-center">
+                    <h3 class="text-xl font-semibold text-white">Espacio Comercial - Salón de Yoga</h3>
+                    <span class="text-xs bg-amber-600 text-white px-3 py-1 rounded-full">360° Interactivo</span>
+                </div>
+                <div class="tour-container">
+                    <iframe class="tour-iframe interactive-tour" data-src="tours/yoga/index.htm"
+                        allow="gyroscope; accelerometer; magnetometer; vr; autoplay" allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3. SECCIÓN DE SERVICIOS, BENEFICIOS Y CONTACTO -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <!-- Servicios -->
+        <div class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-10 text-amber-500">Nuestros Servicios</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800">
+                    <h3 class="text-xl font-semibold mb-3 text-white">Recorridos 360° Virtuales</h3>
+                    <p class="text-gray-400">Creamos experiencias inmersivas interactivas para bienes raíces, hoteles,
+                        Airbnb y espacios comerciales.</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800">
+                    <h3 class="text-xl font-semibold mb-3 text-white">Captura Aérea con Dron</h3>
+                    <p class="text-gray-400">Tomas cenitales y en video 4K de alta calidad para destacar la ubicación y
+                        entorno de tus proyectos.</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-xl border border-gray-800">
+                    <h3 class="text-xl font-semibold mb-3 text-white">Optimización Digital</h3>
+                    <p class="text-gray-400">Soluciones web adaptadas para mostrar tu portafolio de manera profesional
+                        en cualquier dispositivo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Beneficios -->
+        <div class="mb-20 bg-gray-900/60 p-8 rounded-2xl border border-gray-800">
+            <h2 class="text-3xl font-bold text-center mb-10 text-amber-500">¿Por qué elegirnos?</h2>
+            <div class="grid md:grid-cols-2 gap-6 text-gray-300">
+                <div class="flex items-start gap-3">
+                    <span class="text-amber-500 font-bold text-xl">✓</span>
+                    <p><strong>Mayor impacto visual:</strong> Atrae y cautiva a tus clientes potenciales desde el primer
+                        segundo.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-amber-500 font-bold text-xl">✓</span>
+                    <p><strong>Disponibilidad 24/7:</strong> Los clientes pueden recorrer los espacios virtuales a
+                        cualquier hora y desde cualquier lugar.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-amber-500 font-bold text-xl">✓</span>
+                    <p><strong>Tecnología de punta:</strong> Compatibilidad total con visores de realidad virtual,
+                        celulares y computadoras.</p>
+                </div>
+                <div class="flex items-start gap-3">
+                    <span class="text-amber-500 font-bold text-xl">✓</span>
+                    <p><strong>Ahorro de tiempo:</strong> Filtra clientes calificados permitiéndoles conocer el espacio
+                        a detalle antes de una visita presencial.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contacto -->
+        <div id="contacto"
+            class="text-center bg-gradient-to-b from-gray-900 to-black p-10 rounded-2xl border border-gray-800">
+            <h2 class="text-3xl font-bold mb-4 text-amber-500">¿Listo para llevar tu proyecto al siguiente nivel?</h2>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Ponte en contacto con nosotros hoy mismo y descubre cómo
+                podemos ayudarte a digitalizar tus espacios.</p>
+            <a href="https://wa.me/" target="_blank"
+                class="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold px-8 py-3 rounded-full transition-all shadow-lg">
+                Contáctanos por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 text-center text-gray-500 text-sm border-t border-gray-900">
+        <p>&copy; 2026 Inversiones Adrián. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- SCRIPTS DE CONTROL -->
+    <script>
+        let isGlobalMuted = true; // Arranca silenciado
+
+        function toggleGlobalMute() {
+            isGlobalMuted = !isGlobalMuted;
+            const btnText = document.getElementById("mute-text");
+            const muteIcon = document.getElementById("mute-icon");
+            const btn = document.getElementById("global-mute-btn");
+            const dronVideo = document.getElementById("dron-video");
+
+            if (dronVideo) {
+                dronVideo.muted = isGlobalMuted;
+            }
+
+            if (isGlobalMuted) {
+                btnText.innerText = "Silenciado";
+                btn.classList.remove("bg-amber-600", "hover:bg-amber-700");
+                btn.classList.add("bg-red-600", "hover:bg-red-700");
+                muteIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />`;
+            } else {
+                btnText.innerText = "Audio Activado";
+                btn.classList.remove("bg-red-600", "hover:bg-red-700");
+                btn.classList.add("bg-amber-600", "hover:bg-amber-700");
+                muteIcon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />`;
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const frames = document.querySelectorAll(".interactive-tour");
+            const dronVideo = document.getElementById("dron-video");
+
+            if (dronVideo) {
+                dronVideo.play().catch(err => {
+                    console.log("Reproducción automática prevenida", err);
+                });
+            }
+
+            const portadaSection = document.getElementById("portada-section");
+            if (portadaSection && dronVideo) {
+                const portadaObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (!entry.isIntersecting) {
+                            dronVideo.pause();
+                        } else {
+                            dronVideo.play();
+                        }
+                    });
+                }, { threshold: 0.2 });
+                portadaObserver.observe(portadaSection);
+            }
+
+            const observerOptions = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.5
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const iframe = entry.target;
+                    if (entry.isIntersecting) {
+                        if (!iframe.getAttribute("src") && iframe.getAttribute("data-src")) {
+                            iframe.setAttribute("src", iframe.getAttribute("data-src"));
+                        }
+                    } else {
+                        if (iframe.getAttribute("src")) {
+                            iframe.setAttribute("data-stored-src", iframe.getAttribute("src"));
+                            iframe.removeAttribute("src");
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            frames.forEach(frame => observer.observe(frame));
+        });
+    </script>
+</body>
+
+</html>

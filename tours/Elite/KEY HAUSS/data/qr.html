@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #29262D;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            overflow-y: hidden;
+        }
+        .qr-container {
+            margin: 10px auto;
+            max-width: 400px;
+            width: 100%;
+        }
+        #qr-content {
+            margin-top: -20px;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #qr-content h1 {
+            font-size: 1.2em;
+        }
+        #qrImage {
+            margin: 0 auto;
+        }
+        .qr-code {
+            max-width: 150px;
+            margin: 10px auto;
+            display: block;
+        }
+        .code-display {
+            display: inline-block;
+            text-align: center;
+            word-break: break-all;
+            padding: 8px 15px 8px 15px;
+            background-color: #666666;
+            border-radius: 5px;
+            margin: 10px;
+            color: #ffffff;
+            font-size: 1.1em;
+            box-sizing: border-box;
+        }
+        .code-display p {
+            margin: 0;
+        }
+
+        .code-display span {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #666666;
+            border-top: 5px solid #00b3ff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .error-message {
+            color: #ffffff;
+            padding: 15px;
+            border: 1px solid #ffffff;
+            background-color: rgba(255, 107, 107, 0.1);
+            border-radius: 5px;
+            margin: 20px auto;
+            display: none;
+            max-width: 400px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .content {
+            display: none;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .expired-message {
+            display: none;
+            padding: 40px;
+            background-color: #666666;
+            border: none;
+            border-radius: 5px;
+            color: #ffffff;
+            max-width: 400px;
+            font-size: 0.8em;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .refresh-button {
+            background-color: #009fe3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .refresh-button:hover {
+            background-color: #00baff;
+        }
+        .warning-message {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            color: #ffffff;
+            max-width: 260px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 0.8em;
+            display: none;
+            margin: 0 auto;
+        }
+        #newDeviceTitle {
+            font-size: 1.4em;
+        }
+        #newDeviceMessage {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Loading QR...</p>
+    </div>
+
+    <div id="error" class="error-message"></div>
+
+    <div id="content" class="content">
+        <div id="qr-content">
+            <h1>QR Code</h1>
+            <div class="qr-container">
+                <img id="qrImage" class="qr-code" alt="QR Code" />
+            </div>
+            <div class="code-display">
+                <p>App code: <span id="codeText"></span></p>
+            </div>
+        </div>
+        <div id="new-device-content" style="display: none;">
+            <h1 id="newDeviceTitle"></h1>
+            <p id="newDeviceMessage"></p>
+            <button id="addDeviceButton" class="refresh-button"></button>
+        </div>
+    </div>
+
+    <div id="expired" class="expired-message">
+        <p>QR code session has expired. Refresh it if you want to add new devices.</p>
+        <button id="refreshButton" class="refresh-button">Refresh</button>
+    </div>
+
+    <div class="warning-message">
+        <p>Please keep this window open to maintain the live preview functionality</p>
+    </div>
+
+    <script src="https://app.3dvista.com/pwalocalserver.es.js"></script>
+    <script>
+        const translations = {
+            en: {
+                title: "QR Code",
+                loading: "Loading QR...",
+                appCode: "App code:",
+                expired: "QR code session has expired. Refresh it if you want to add new devices.",
+                refresh: "Refresh",
+                keepOpen: "Please keep this window open to maintain the live preview functionality",
+                newDevice: "Device connected successfully!",
+                addDevice: "Add Device",
+                addDeviceMessage: "If you want to connect another device, click the button below.",
+                noInternet: "No internet connection. It is required to create a QR code.",
+                generateError: "Could not generate QR code"
+            },
+            es: {
+                title: "Código QR",
+                loading: "Cargando QR...",
+                appCode: "Código de la aplicación:",
+                expired: "La sesión del código QR ha expirado. Actualícelo si desea añadir nuevos dispositivos.",
+                refresh: "Actualizar",
+                keepOpen: "Por favor, mantenga esta ventana abierta para mantener la funcionalidad de vista previa en vivo",
+                newDevice: "¡Dispositivo conectado correctamente!",
+                addDevice: "Añadir Dispositivo",
+                addDeviceMessage: "Si desea conectar otro dispositivo, haga clic en el botón de abajo.",
+                noInternet: "Sin conexión a Internet. Es necesario para crear un código QR.",
+                generateError: "No se pudo generar el código QR"
+            },
+            de: {
+                title: "QR-Code",
+                loading: "QR wird geladen...",
+                appCode: "App-Code:",
+                expired: "QR-Code-Sitzung ist abgelaufen. Aktualisieren Sie, wenn Sie neue Geräte hinzufügen möchten.",
+                refresh: "Aktualisieren",
+                keepOpen: "Bitte halten Sie dieses Fenster geöffnet, um die Live-Vorschau-Funktionalität aufrechtzuerhalten",
+                newDevice: "Neues Gerät verbunden!",
+                addDevice: "Gerät hinzufügen",
+                addDeviceMessage: "Wenn Sie ein weiteres Gerät verbinden möchten, klicken Sie auf die Schaltfläche unten.",
+                noInternet: "Keine Internetverbindung. Dies ist erforderlich, um einen QR-Code zu erstellen.",
+                generateError: "QR-Code konnte nicht generiert werden"
+            },
+            it: {
+                title: "Codice QR",
+                loading: "Caricamento QR...",
+                appCode: "Codice app:",
+                expired: "La sessione del codice QR è scaduta. Aggiorna se vuoi aggiungere nuovi dispositivi.",
+                refresh: "Aggiorna",
+                keepOpen: "Si prega di mantenere questa finestra aperta per mantenere la funzionalità di anteprima dal vivo",
+                newDevice: "Nuovo dispositivo connesso!",
+                addDevice: "Aggiungi dispositivo",
+                addDeviceMessage: "Se vuoi connettere un altro dispositivo, clicca il pulsante qui sotto.",
+                noInternet: "Nessuna connessione Internet. È necessaria per creare un codice QR.",
+                generateError: "Impossibile generare il codice QR"
+            },
+            fr: {
+                title: "Code QR",
+                loading: "Chargement du QR...",
+                appCode: "Code de l'application :",
+                expired: "La session du code QR a expiré. Actualisez si vous souhaitez ajouter de nouveaux appareils.",
+                refresh: "Actualiser",
+                keepOpen: "Veuillez garder cette fenêtre ouverte pour maintenir la fonctionnalité d'aperçu en direct",
+                newDevice: "Nouvel appareil connecté !",
+                addDevice: "Ajouter un appareil",
+                addDeviceMessage: "Si vous souhaitez connecter un autre appareil, cliquez sur le bouton ci-dessous.",
+                noInternet: "Pas de connexion Internet. Elle est nécessaire pour créer un code QR.",
+                generateError: "Impossible de générer le code QR"
+            },
+            pt: {
+                title: "Código QR",
+                loading: "Carregando QR...",
+                appCode: "Código da aplicação:",
+                expired: "A sessão do código QR expirou. Atualize se quiser adicionar novos dispositivos.",
+                refresh: "Atualizar",
+                keepOpen: "Por favor, mantenha esta janela aberta para manter a funcionalidade de pré-visualização ao vivo",
+                newDevice: "Novo dispositivo conectado!",
+                addDevice: "Adicionar dispositivo",
+                addDeviceMessage: "Se você deseja conectar outro dispositivo, clique no botão abaixo.",
+                noInternet: "Sem conexão à Internet. É necessária para criar um código QR.",
+                generateError: "Não foi possível gerar o código QR"
+            },
+            ja: {
+                title: "QRコード",
+                loading: "QRコードを読み込み中...",
+                appCode: "アプリコード：",
+                expired: "QRコードセッションの有効期限が切れました。新しいデバイスを追加する場合は更新してください。",
+                refresh: "更新",
+                keepOpen: "ライブプレビュー機能を維持するため、このウィンドウを開いたままにしてください",
+                newDevice: "デバイスが正常に接続されました！",
+                addDevice: "デバイスを追加",
+                addDeviceMessage: "別のデバイスを接続する場合は、下のボタンをクリックしてください。",
+                noInternet: "インターネット接続がありません。QRコードの作成には接続が必要です。",
+                generateError: "QRコードを生成できませんでした"
+            },
+            zh: {
+                title: "二维码",
+                loading: "正在加载二维码...",
+                appCode: "应用程序代码：",
+                expired: "二维码会话已过期。如果要添加新设备，请刷新。",
+                refresh: "刷新",
+                keepOpen: "请保持此窗口打开以维持实时预览功能",
+                newDevice: "设备连接成功！",
+                addDevice: "添加设备",
+                addDeviceMessage: "如果要连接另一台设备，请点击下方按钮。",
+                noInternet: "无网络连接。生成二维码需要网络连接。",
+                generateError: "无法生成二维码"
+            },
+            tr: {
+                title: "QR Kodu",
+                loading: "QR Kodu yükleniyor...",
+                appCode: "Uygulama kodu:",
+                expired: "QR kod oturumu sona erdi. Yeni cihazlar eklemek istiyorsanız yenileyin.",
+                refresh: "Yenile",
+                keepOpen: "Canlı önizleme işlevini sürdürmek için lütfen bu pencereyi açık tutun",
+                newDevice: "Cihaz başarıyla bağlandı!",
+                addDevice: "Cihaz Ekle",
+                addDeviceMessage: "Başka bir cihaz bağlamak istiyorsanız, aşağıdaki düğmeyi tıklayın.",
+                noInternet: "İnternet bağlantısı yok. QR kodu oluşturmak için gereklidir.",
+                generateError: "QR kodu oluşturulamadı"
+            },
+            ru: {
+                title: "QR-код",
+                loading: "Загрузка QR-кода...",
+                appCode: "Код приложения:",
+                expired: "Сессия QR-кода истекла. Обновите, если хотите добавить новые устройства.",
+                refresh: "Обновить",
+                keepOpen: "Пожалуйста, держите это окно открытым для поддержания функции предварительного просмотра",
+                newDevice: "Устройство успешно подключено!",
+                addDevice: "Добавить устройство",
+                addDeviceMessage: "Если вы хотите подключить другое устройство, нажмите кнопку ниже.",
+                noInternet: "Нет подключения к Интернету. Оно необходимо для создания QR-кода.",
+                generateError: "Не удалось сгенерировать QR-код"
+            },
+            nl: {
+                title: "QR-code",
+                loading: "QR-code laden...",
+                appCode: "App-code:",
+                expired: "QR-code sessie is verlopen. Vernieuw als je nieuwe apparaten wilt toevoegen.",
+                refresh: "Vernieuwen",
+                keepOpen: "Houd dit venster open om de live preview-functionaliteit te behouden",
+                newDevice: "Apparaat succesvol verbonden!",
+                addDevice: "Apparaat toevoegen",
+                addDeviceMessage: "Als je een ander apparaat wilt verbinden, klik dan op de knop hieronder.",
+                noInternet: "Geen internetverbinding. Dit is vereist om een QR-code te maken.",
+                generateError: "Kon geen QR-code genereren"
+            }
+        };
+
+        let currentLanguage = 'en';
+
+        function getLanguage() {
+            const urlParams = new URLSearchParams(window.location.hash.substring(1));
+            const lang = urlParams.get('language');
+            return translations[lang] ? lang : 'en';
+        }
+
+        function updateTexts() {
+            document.querySelector('#content h1').textContent = translations[currentLanguage].title;
+            document.querySelector('.loading p').textContent = translations[currentLanguage].loading;
+            document.querySelector('.code-display p').innerHTML = `${translations[currentLanguage].appCode} <span id="codeText"></span>`;
+            document.querySelector('#expired p').textContent = translations[currentLanguage].expired;
+            document.querySelector('#refreshButton').textContent = translations[currentLanguage].refresh;
+            document.querySelector('.warning-message p').textContent = translations[currentLanguage].keepOpen;
+            document.querySelector('#newDeviceTitle').textContent = translations[currentLanguage].newDevice;
+            document.querySelector('#newDeviceMessage').textContent = translations[currentLanguage].addDeviceMessage;
+            document.querySelector('#addDeviceButton').textContent = translations[currentLanguage].addDevice;
+            document.documentElement.lang = currentLanguage;
+        }
+
+        let qrIds = [];
+
+        async function createQR() {
+            const loading = document.getElementById('loading');
+            const error = document.getElementById('error');
+            const content = document.getElementById('content');
+            const expired = document.getElementById('expired');
+            const qrImage = document.getElementById('qrImage');
+            const codeText = document.getElementById('codeText');
+            const warningMessage = document.querySelector('.warning-message');
+
+            loading.style.display = 'flex';
+            error.style.display = 'none';
+            content.style.display = 'none';
+            expired.style.display = 'none';
+
+            try {
+                if (!navigator.onLine) {
+                    throw new Error(translations[currentLanguage].noInternet);
+                }
+
+                const urlParams = new URLSearchParams(window.location.hash.substring(1));
+                const url = urlParams.get('url') || '/';
+                const ips = (urlParams.get('ips') || '').split(',').filter((ip) => ip !== '');
+
+                const result = await TDV.PWALocalServer.create({
+                    type: 'preview',
+                    duration: 300,
+                    url: url,
+                    ips: ips,
+                    expired: () => {
+                        content.style.display = 'none';
+                        expired.style.display = 'block';
+                        warningMessage.style.display = 'block';
+                    },
+                    used: () => {
+                        const qrContent = document.getElementById('qr-content');
+                        const newDeviceContent = document.getElementById('new-device-content');
+                        qrContent.style.display = 'none';
+                        newDeviceContent.style.display = 'block';
+                        document.getElementById('addDeviceButton').addEventListener('click', createQR);
+                    }
+                });
+
+                if (result && result.qr) {
+                    const qrContent = document.getElementById('qr-content');
+                    const newDeviceContent = document.getElementById('new-device-content');
+                    
+                    qrContent.style.display = 'block';
+                    newDeviceContent.style.display = 'none';
+                    qrImage.src = result.qr;
+                    codeText.textContent = result.code;
+                    loading.style.display = 'none';
+                    content.style.display = 'block';
+                    warningMessage.style.display = 'block';
+                    qrIds.push(result.id);
+                } else {
+                    throw new Error(translations[currentLanguage].generateError);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                loading.style.display = 'none';
+                const errorElement = document.getElementById('error');
+                errorElement.textContent = `Error: ${error.message}`;
+                errorElement.style.display = 'block';
+                warningMessage.style.display = 'block';
+            }
+        }
+
+        function initHashListener() {
+            window.addEventListener('hashchange', () => {
+                const hash = window.location.hash.substring(1);
+                const params = new URLSearchParams(hash);
+                const url = decodeURIComponent(params.get('url'));
+                if(url) {
+                    qrIds.forEach(id => {
+                        TDV.PWALocalServer.updateURL(id, url);
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('beforeunload', () => {
+            qrIds.forEach(id => {
+                TDV.PWALocalServer.dispose(id);
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            currentLanguage = getLanguage();
+            updateTexts();
+            createQR();
+            initHashListener();
+        });
+
+        document.getElementById('refreshButton').addEventListener('click', createQR);
+    </script>
+</body>
+</html>

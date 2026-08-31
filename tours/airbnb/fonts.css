@@ -1,0 +1,48 @@
+@font-face {
+   font-family: "Montserrat";
+   src: url("fonts/Montserrat-Black.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Arial Negrita Cursiva";
+   src: url("fonts/Arial Negrita Cursiva.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Bebas Neue Bold";
+   src: url("fonts/BebasNeueBold.woff2") format("woff2");
+   font-weight: bold;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Montserrat";
+   src: url("fonts/Montserrat-Bold.woff2") format("woff2");
+   font-weight: bold;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Oswald";
+   src: url("fonts/Oswald Bold.woff2") format("woff2");
+   font-weight: bold;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Avenir Black";
+   src: url("fonts/Avenir Black.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Montserrat";
+   src: url("fonts/Montserrat-Regular.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: "Arial Black Normal";
+   src: url("fonts/Arial Black Normal.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+}
